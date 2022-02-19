@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<!-- Para que execute paginas dinamicas incluir xmlns...-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    <head th:replace="layout/modelo :: head">
+        <title>Home</title>
+    </head>
+    <body>
+        <header th:replace="layout/modelo :: header"></header>
+        <section th:replace="layout/botoesAgregar :: botoesAgregar"></section>
+        <section th:replace="layout/agregarCliente :: agregarCliente"></section>
+        <section th:replace="layout/listaClientes :: listaClientes"></section>
+        <footer th:replace="layout/modelo :: footer"></footer>
+    </body>
+</html>
